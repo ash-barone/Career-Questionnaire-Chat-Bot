@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<!--questionaire start-->
+<category>
+    <pattern>my name is *</pattern>
+    <template>Thanks, <set name = "name"><star/></set>! Let's get started. Which subject do you prefer?
+    
+    <!--choices-->
+    <button>
+        <text>Design</text>
+        <postback>cdesign</postback>
+    </button>
+    
+    <button>
+        <text>Programming</text>
+        <postback>cprogramming</postback>
+    </button>
+    </template>
+</category>
+
+<!--branch2 cdesign-->
+<category>
+    <pattern>cdesign</pattern>
+    <template>Excellent! What would you rather design?
+    
+    <!--choices-->
+    <button>
+        <text>Webpages</text>
+        <postback>cwebpages</postback>
+    </button>
+    
+    <button>
+        <text>Databases</text>
+        <postback>cdatabases</postback>
+    </button>
+    </template>
+</category>
+
+<!--branch3 cdesign-->
+<!--cwebpages-->
+<category>
+    <pattern>cwebpages</pattern>
+    <template>Nice! Which task sounds more interesting to you?
+    <button>
+        <text>The process of tweaking an interface until to it feels and functions smoothly and intuitively.</text>
+        <postback>cuxdesign</postback>
+    </button>
+    
+    <button>
+        <text>Working with colors, shapes, and visual design to make an interface look just right.</text>
+        <postback>cuidesign</postback>
+    </button>
+    </template>
+</category>
+
+<!--cuxdesign-->
+<category>
+    <pattern>cuxdesign</pattern>
+    <template>Sounds like you have a knack for efficiency and experience. You may enjoy a career in User Experience Design, or UX Design. UX Designers work 
+    to provide graphical user interfaces (GUIs) the tactile functionality clients desire. Choose from an option below.
+        <button>
+        <text>UX Designers career info</text>
+        <url>https://www.careerexplorer.com/careers/ux-designer/</url>
+    </button>
+    
+    <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button></template>
+</category>
+
+<!--cuidesign-->
+<category>
+    <pattern>cuidesign</pattern>
+    <template>Sounds like you're very creative! You may enjoy a career in User Interface Design. UI Designers use graphic design to 
+    design the visuals of every screen, button, text box, and more of a graphical user interface (GUI). Choose from an option below.
+    <button>
+        <text>UI Design career info</text>
+        <url>https://www.uxdesigninstitute.com/blog/what-does-a-ui-designer-do/</url>
+    </button>
+    
+    <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button></template>
+</category>
+
+<!--cdatabases-->
+<category>
+    <pattern>cdatabases</pattern>
+    <template>Awesome! Which sounds like something you'd be good at?
+        <button>
+            <text>Building a database from the ground up using guidelines from a client.</text>
+            <postback>cdatabasearchitect</postback>
+        </button>
+        <button>
+            <text>Managing an existing database to analyze and answer questions about the data set contained within.</text>
+            <postback>cdatabaseadmin</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>cdatabasearchitect</pattern>
+    <template>Fantastic! Sounds like you're very detail-oriented. 
+    You may enjoy a career in Database Architecture. Database Architects are the people who designs database structure and requirements
+     based on requests from a client. Choose from an option below.
+     
+     <button>
+        <text>Database Architect career info</text>
+        <url>https://www.careerexplorer.com/careers/database-architect/</url>
+    </button>
+    
+     <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>cdatabaseadmin</pattern>
+    <template>Cool! Sounds like you're a very organized person who knows how to use their resources. 
+    You may enjoy a career in Database Administration. Database adminstrators use databases to 
+    protect and organize client data. Choose from an option below.
+    <button>
+        <text>Database Administration career info</text>
+        <url>https://www.careerexplorer.com/careers/database-administrator/</url>
+    </button>
+    
+    <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button>
+    </template>
+</category>
+
+<!--branch2 programming-->
+<!--cprogramming-->
+<category>
+    <pattern>cprogramming</pattern>
+    <template>Great! Which type of programs would you want to make?
+    
+    <button>
+        <text>Independently functioning programs like a banking app or interactive calendar.</text>
+        <postback>cappdeveloper</postback>
+    </button>
+    <button>
+        <text>Algorithm based analytics programs used to solve larger problems.</text>
+        <postback>cdatascientist</postback>
+    </button>
+    </template>
+</category>
+
+<!--cappdeveloper-->
+<category>
+    <pattern>cappdeveloper</pattern>
+    <template>Alright! You seems like someone who wants to solve everyday problems. 
+    You may enjoy a career in App Development. App developers build, test, and maintain applications for a number of tasks 
+    such as scheduling, payments, banking, or even games! Choose from an option below
+    <button>
+        <text>Application Developer career info</text>
+        <url>https://www.careerexplorer.com/careers/app-developer/</url>
+    </button>
+    
+    <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button>
+    </template>
+</category>
+
+<!--cdatascientist-->
+<category>
+    <pattern>cdatascientist</pattern>
+    <template>Okay! Sounds like you're interested in analyzing data to solve real world problems.
+    You may enjoy a career in Data Science. Data Scientists work with large data sets, algorithms, AI and more to 
+    provide businesses, research facilities, and more with answers to their big questions. Choose from an option below
+    <button>
+        <text>Data Scientist career info</text>
+        <url>https://www.careerexplorer.com/careers/data-scientist/</url>
+    </button>
+    
+    <button>
+        <text>More options</text>
+        <postback>cmoreoptions</postback>
+    </button>
+    </template>
+</category>
+
+</aiml>

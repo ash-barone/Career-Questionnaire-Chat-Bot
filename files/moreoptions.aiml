@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>cmoreoptions</pattern>
+    <template>Choose an option below.
+    <button>
+        <text>Start questionaire over.</text>
+        <postback>start</postback>
+    </button>
+    
+    <button>
+        <text>Get help.</text>
+        <postback>cgethelp</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>cgethelp</pattern>
+    <template>For more help, please set up an appointment with an advisor by calling 866-ADV-ISOR or emailing studentadvisor@wgu.edu.
+        Describe your problem and someone will be in touch to schedule an appointment as soon as possible. Thanks!
+        <button>
+            <text>Start over</text>
+            <postback>start</postback>
+        </button>
+        <button>
+            <text>Goodbye</text>
+            <postback>cgoodbye</postback>
+        </button>
+        </template>
+</category>
+
+<category>
+    <pattern>cgoodbye</pattern>
+    <template>Thanks for using CareerBot! See you later!</template>
+</category>
+
+</aiml>
